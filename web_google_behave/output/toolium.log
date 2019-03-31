@@ -2770,3 +2770,187 @@ DEBUG   2019-03-27 15:10:40,610 [connectionpool] http://127.0.0.1:52879 "POST /s
 INFO    2019-03-27 15:10:40,611 [environment] Running new scenario: Search with google for "Python" and open the first found link
 DEBUG   2019-03-27 15:10:41,689 [google_home] Performing search for 'Python'
 INFO    2019-03-27 15:10:44,537 [environment] The scenario 'Search with google for "Python" and open the first found link' has passed
+DEBUG   2019-03-28 17:33:36,513 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:33:36,558 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:33:36,577 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:33:36,577 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:33:39,927 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:52170
+DEBUG   2019-03-28 17:33:47,625 [connectionpool] http://127.0.0.1:52170 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:33:48,739 [connectionpool] http://127.0.0.1:52170 "POST /session/fc94ea60ad5bb830b1dde9c1cd2b2614/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:33:48,740 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:33:48,856 [connectionpool] http://127.0.0.1:52170 "POST /session/fc94ea60ad5bb830b1dde9c1cd2b2614/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:33:48,857 [connectionpool] http://127.0.0.1:52170 "GET /session/fc94ea60ad5bb830b1dde9c1cd2b2614/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:33:48,858 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:33:48,859 [connectionpool] http://127.0.0.1:52170 "POST /session/fc94ea60ad5bb830b1dde9c1cd2b2614/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:33:48,860 [environment] Running new scenario: Searches for google for not existing page and checks results.
+DEBUG   2019-03-28 17:33:50,023 [google_home] Performing search for 'עפûגרפעûגפדמצגרמפרמצגנדנףדאנשפנצארףרשמאצשףאנûאנףדצ'
+ERROR   2019-03-28 17:34:00,453 [page_element] Page element of type 'Button' with locator ('name', 'btnK') not found or is not clickable after 10 seconds
+ERROR   2019-03-28 17:34:00,649 [environment] The scenario 'Searches for google for not existing page and checks results.' has failed
+INFO    2019-03-28 17:34:01,098 [utils] Screenshot saved in C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\output\screenshots\2019-03-28_173336_chrome\01_Searches_for_google_for_not_existing_page_and_checks_results.png
+DEBUG   2019-03-28 17:34:01,099 [utils] Reading logs from 'browser, driver' and writing them to log files
+DEBUG   2019-03-28 17:49:23,000 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:49:23,000 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:49:23,006 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:49:23,006 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:49:23,571 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:52885
+DEBUG   2019-03-28 17:49:25,696 [connectionpool] http://127.0.0.1:52885 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:49:26,805 [connectionpool] http://127.0.0.1:52885 "POST /session/d94dc9cff99ecc042c2ee9a92044987d/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:49:26,806 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:49:27,066 [connectionpool] http://127.0.0.1:52885 "POST /session/d94dc9cff99ecc042c2ee9a92044987d/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:49:27,072 [connectionpool] http://127.0.0.1:52885 "GET /session/d94dc9cff99ecc042c2ee9a92044987d/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:49:27,073 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:49:27,075 [connectionpool] http://127.0.0.1:52885 "POST /session/d94dc9cff99ecc042c2ee9a92044987d/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:49:27,079 [environment] Running new scenario: Open Google home page
+INFO    2019-03-28 17:49:29,240 [environment] The scenario 'Open Google home page' has passed
+DEBUG   2019-03-28 17:49:31,449 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:49:31,450 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:49:31,456 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:49:31,456 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:49:32,045 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:52923
+DEBUG   2019-03-28 17:49:36,244 [connectionpool] http://127.0.0.1:52923 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:49:37,354 [connectionpool] http://127.0.0.1:52923 "POST /session/250530b55d274d56acc9ad4fa73ea86e/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:49:37,355 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:49:37,470 [connectionpool] http://127.0.0.1:52923 "POST /session/250530b55d274d56acc9ad4fa73ea86e/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:49:37,472 [connectionpool] http://127.0.0.1:52923 "GET /session/250530b55d274d56acc9ad4fa73ea86e/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:49:37,472 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:49:37,473 [connectionpool] http://127.0.0.1:52923 "POST /session/250530b55d274d56acc9ad4fa73ea86e/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:49:37,474 [environment] Running new scenario: Search with google for "hideo kojima"
+DEBUG   2019-03-28 17:49:39,741 [google_home] Performing search for 'hideo kojima'
+INFO    2019-03-28 17:49:43,526 [environment] The scenario 'Search with google for "hideo kojima"' has passed
+DEBUG   2019-03-28 17:49:45,777 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:49:45,777 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:49:45,781 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:49:45,781 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:49:46,369 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:52976
+DEBUG   2019-03-28 17:49:50,539 [connectionpool] http://127.0.0.1:52976 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:49:51,658 [connectionpool] http://127.0.0.1:52976 "POST /session/53619b98304e1222c97e2ecc9fe4eac7/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:49:51,659 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:49:51,793 [connectionpool] http://127.0.0.1:52976 "POST /session/53619b98304e1222c97e2ecc9fe4eac7/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:49:51,796 [connectionpool] http://127.0.0.1:52976 "GET /session/53619b98304e1222c97e2ecc9fe4eac7/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:49:51,796 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:49:51,798 [connectionpool] http://127.0.0.1:52976 "POST /session/53619b98304e1222c97e2ecc9fe4eac7/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:49:51,799 [environment] Running new scenario: Search with google for "hideo kojima" with Enter button
+DEBUG   2019-03-28 17:49:52,961 [google_home] Performing search for 'hideo kojima'
+INFO    2019-03-28 17:49:54,491 [environment] The scenario 'Search with google for "hideo kojima" with Enter button' has passed
+DEBUG   2019-03-28 17:49:56,788 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:49:56,789 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:49:56,795 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:49:56,795 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:49:57,392 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:53023
+DEBUG   2019-03-28 17:49:59,896 [connectionpool] http://127.0.0.1:53023 "POST /session HTTP/1.1" 200 996
+DEBUG   2019-03-28 17:50:01,005 [connectionpool] http://127.0.0.1:53023 "POST /session/9726f7001a838dcf7c94cf95a642e564/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:50:01,006 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:50:01,222 [connectionpool] http://127.0.0.1:53023 "POST /session/9726f7001a838dcf7c94cf95a642e564/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:50:01,225 [connectionpool] http://127.0.0.1:53023 "GET /session/9726f7001a838dcf7c94cf95a642e564/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:50:01,226 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:50:01,227 [connectionpool] http://127.0.0.1:53023 "POST /session/9726f7001a838dcf7c94cf95a642e564/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:50:01,229 [environment] Running new scenario: Check autocomplete in suggestions inner container for "hideo"
+DEBUG   2019-03-28 17:50:02,639 [google_home] Writing in search input: 'hideo'
+INFO    2019-03-28 17:50:03,164 [environment] The scenario 'Check autocomplete in suggestions inner container for "hideo"' has passed
+DEBUG   2019-03-28 17:50:05,381 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:50:05,382 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:50:05,388 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:50:05,389 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:50:05,979 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:53061
+DEBUG   2019-03-28 17:50:08,009 [connectionpool] http://127.0.0.1:53061 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:50:09,116 [connectionpool] http://127.0.0.1:53061 "POST /session/63a53dfa131552021aa6456b6d087670/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:50:09,117 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:50:09,241 [connectionpool] http://127.0.0.1:53061 "POST /session/63a53dfa131552021aa6456b6d087670/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:50:09,243 [connectionpool] http://127.0.0.1:53061 "GET /session/63a53dfa131552021aa6456b6d087670/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:50:09,244 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:50:09,245 [connectionpool] http://127.0.0.1:53061 "POST /session/63a53dfa131552021aa6456b6d087670/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:50:09,246 [environment] Running new scenario: Check autocomplete in suggestions inner container for "hideo kozima"
+DEBUG   2019-03-28 17:50:10,381 [google_home] Writing in search input: 'hideo kozima'
+ERROR   2019-03-28 17:50:10,752 [environment] The scenario 'Check autocomplete in suggestions inner container for "hideo kozima"' has failed
+INFO    2019-03-28 17:50:11,169 [utils] Screenshot saved in C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\output\screenshots\2019-03-28_174923_chrome\01_Check_autocomplete_in_suggestions_inner_container_for__hideo_kozima.png
+DEBUG   2019-03-28 17:50:11,171 [utils] Reading logs from 'browser, driver' and writing them to log files
+DEBUG   2019-03-28 17:50:13,382 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:50:13,383 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:50:13,389 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:50:13,389 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:50:13,971 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:53096
+DEBUG   2019-03-28 17:50:16,241 [connectionpool] http://127.0.0.1:53096 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:50:17,353 [connectionpool] http://127.0.0.1:53096 "POST /session/3542afe7a652f0901a129af750e199aa/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:50:17,353 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:50:17,499 [connectionpool] http://127.0.0.1:53096 "POST /session/3542afe7a652f0901a129af750e199aa/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:50:17,501 [connectionpool] http://127.0.0.1:53096 "GET /session/3542afe7a652f0901a129af750e199aa/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:50:17,501 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:50:17,502 [connectionpool] http://127.0.0.1:53096 "POST /session/3542afe7a652f0901a129af750e199aa/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:50:17,503 [environment] Running new scenario: Search with google for "Python" and check results contains search words
+DEBUG   2019-03-28 17:50:19,010 [google_home] Performing search for 'Python'
+INFO    2019-03-28 17:50:21,725 [environment] The scenario 'Search with google for "Python" and check results contains search words' has passed
+DEBUG   2019-03-28 17:50:23,979 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:50:23,980 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:50:23,986 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:50:23,986 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:50:24,577 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:53140
+DEBUG   2019-03-28 17:50:27,425 [connectionpool] http://127.0.0.1:53140 "POST /session HTTP/1.1" 200 998
+DEBUG   2019-03-28 17:50:28,540 [connectionpool] http://127.0.0.1:53140 "POST /session/ddddd92d92ab25b679efbbffc8a30b37/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:50:28,541 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:50:28,701 [connectionpool] http://127.0.0.1:53140 "POST /session/ddddd92d92ab25b679efbbffc8a30b37/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:50:28,703 [connectionpool] http://127.0.0.1:53140 "GET /session/ddddd92d92ab25b679efbbffc8a30b37/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:50:28,704 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:50:28,705 [connectionpool] http://127.0.0.1:53140 "POST /session/ddddd92d92ab25b679efbbffc8a30b37/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:50:28,708 [environment] Running new scenario: Searches for google for not existing page and checks results.
+DEBUG   2019-03-28 17:50:30,010 [google_home] Performing search for 'עפûגרפעûגפדמצגרמפרמצגנדנףדאנשפנצארףרשמאצשףאנûאנףדצ'
+INFO    2019-03-28 17:50:31,313 [environment] The scenario 'Searches for google for not existing page and checks results.' has passed
+DEBUG   2019-03-28 17:50:33,603 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 17:50:33,604 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 17:50:33,609 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 17:50:33,610 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 17:50:34,195 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:53181
+DEBUG   2019-03-28 17:50:36,485 [connectionpool] http://127.0.0.1:53181 "POST /session HTTP/1.1" 200 997
+DEBUG   2019-03-28 17:50:37,598 [connectionpool] http://127.0.0.1:53181 "POST /session/b8069247b1ec17923101e6eed6d0f309/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 17:50:37,599 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 17:50:37,749 [connectionpool] http://127.0.0.1:53181 "POST /session/b8069247b1ec17923101e6eed6d0f309/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 17:50:37,751 [connectionpool] http://127.0.0.1:53181 "GET /session/b8069247b1ec17923101e6eed6d0f309/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 17:50:37,751 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 17:50:37,752 [connectionpool] http://127.0.0.1:53181 "POST /session/b8069247b1ec17923101e6eed6d0f309/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 17:50:37,753 [environment] Running new scenario: Search with google for "Python" and open the first found link
+DEBUG   2019-03-28 17:50:38,789 [google_home] Performing search for 'Python'
+INFO    2019-03-28 17:50:42,713 [environment] The scenario 'Search with google for "Python" and open the first found link' has passed
+DEBUG   2019-03-28 18:11:23,506 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 18:11:23,506 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 18:11:23,512 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 18:11:23,512 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 18:11:24,096 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:54320
+DEBUG   2019-03-28 18:11:26,540 [connectionpool] http://127.0.0.1:54320 "POST /session HTTP/1.1" 200 998
+DEBUG   2019-03-28 18:11:27,651 [connectionpool] http://127.0.0.1:54320 "POST /session/8bad7f67cea4f0f5773d550516179369/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 18:11:27,652 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 18:11:27,805 [connectionpool] http://127.0.0.1:54320 "POST /session/8bad7f67cea4f0f5773d550516179369/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 18:11:27,807 [connectionpool] http://127.0.0.1:54320 "GET /session/8bad7f67cea4f0f5773d550516179369/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 18:11:27,808 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 18:11:27,809 [connectionpool] http://127.0.0.1:54320 "POST /session/8bad7f67cea4f0f5773d550516179369/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 18:11:27,810 [environment] Running new scenario: Check autocomplete in suggestions inner container for "hideo kozima"
+DEBUG   2019-03-28 18:11:28,943 [google_home] Writing in search input: 'hideo kozima'
+INFO    2019-03-28 18:11:29,302 [environment] The scenario 'Check autocomplete in suggestions inner container for "hideo kozima"' has passed
+DEBUG   2019-03-28 18:24:41,234 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 18:24:41,234 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 18:24:41,240 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 18:24:41,240 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 18:24:41,812 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:55106
+DEBUG   2019-03-28 18:24:46,562 [connectionpool] http://127.0.0.1:55106 "POST /session HTTP/1.1" 200 998
+DEBUG   2019-03-28 18:24:47,677 [connectionpool] http://127.0.0.1:55106 "POST /session/f318ab2ab197f8ae500932f5fcfb6d75/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 18:24:47,678 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 18:24:47,811 [connectionpool] http://127.0.0.1:55106 "POST /session/f318ab2ab197f8ae500932f5fcfb6d75/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 18:24:47,814 [connectionpool] http://127.0.0.1:55106 "GET /session/f318ab2ab197f8ae500932f5fcfb6d75/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 18:24:47,815 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 18:24:47,816 [connectionpool] http://127.0.0.1:55106 "POST /session/f318ab2ab197f8ae500932f5fcfb6d75/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 18:24:47,818 [environment] Running new scenario: Search with google for "Python" and open the first found link
+DEBUG   2019-03-28 18:24:48,996 [google_home] Performing search for 'Python'
+INFO    2019-03-28 18:24:51,809 [environment] The scenario 'Search with google for "Python" and open the first found link' has passed
+DEBUG   2019-03-28 18:25:39,068 [config_parser] Reading properties from file: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\properties.cfg
+DEBUG   2019-03-28 18:25:39,068 [config_parser] Properties config file not found: C:\MyPersonalFiles\Programming\Python\Projects\Study\QA_course\toolium-automation\web_google_behave\conf\local-properties.cfg
+INFO    2019-03-28 18:25:39,074 [config_driver] Creating local driver (type = chrome)
+DEBUG   2019-03-28 18:25:39,074 [config_driver] Chrome driver path given in properties: c://ProgramData//chocolatey//bin//chromedriver.exe
+DEBUG   2019-03-28 18:25:39,649 [connectionpool] Starting new HTTP connection (1): 127.0.0.1:55208
+DEBUG   2019-03-28 18:25:41,509 [connectionpool] http://127.0.0.1:55208 "POST /session HTTP/1.1" 200 998
+DEBUG   2019-03-28 18:25:42,620 [connectionpool] http://127.0.0.1:55208 "POST /session/9cd9c8fa50adccda54bf59c6d0ab547d/window/current/position HTTP/1.1" 200 72
+DEBUG   2019-03-28 18:25:42,621 [driver_wrapper] Window bounds: 0 x 0
+DEBUG   2019-03-28 18:25:42,747 [connectionpool] http://127.0.0.1:55208 "POST /session/9cd9c8fa50adccda54bf59c6d0ab547d/window/current/maximize HTTP/1.1" 200 110
+DEBUG   2019-03-28 18:25:42,749 [connectionpool] http://127.0.0.1:55208 "GET /session/9cd9c8fa50adccda54bf59c6d0ab547d/window/current/size HTTP/1.1" 200 96
+DEBUG   2019-03-28 18:25:42,749 [driver_wrapper] Window size: 1936 x 1056
+DEBUG   2019-03-28 18:25:42,750 [connectionpool] http://127.0.0.1:55208 "POST /session/9cd9c8fa50adccda54bf59c6d0ab547d/timeouts/implicit_wait HTTP/1.1" 200 72
+INFO    2019-03-28 18:25:42,751 [environment] Running new scenario: Search with google for "Python" and open the first found link
+DEBUG   2019-03-28 18:25:43,702 [google_home] Performing search for 'Python'
+INFO    2019-03-28 18:25:47,418 [environment] The scenario 'Search with google for "Python" and open the first found link' has passed

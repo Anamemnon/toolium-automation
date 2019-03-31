@@ -19,7 +19,7 @@ limitations under the License.
 from behave import given, when, then
 
 from toolium.driver_wrapper import DriverWrapper
-from web_behave.pageobjects.login import LoginPageObject
+from web_behave.pageobjects.login_page import LoginPageObject
 
 
 @given('the home page is open in {browser}')

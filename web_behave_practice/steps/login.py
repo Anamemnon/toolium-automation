@@ -17,8 +17,8 @@ limitations under the License.
 """
 
 from behave import given, when, then
-
-from web_behave.pageobjects.login_page import LoginPageObject
+from nose.tools import assert_equal
+from web_behave_practice.pageobjects.login_page import LoginPageObject
 
 
 @given('the home page is open')
@@ -27,9 +27,9 @@ def step_impl(context):
     context.current_page.open()
 
 
-@when('the user logs in with username "{username}" and password "{password}"')
-def step_impl(context, username, password):
-    user = {'username': username, 'password': password}
+@when('the user logs in with email "{email}" and password "{password}"')
+def step_impl(context, email, password):
+    user = {'email': email, 'password': password}
     context.current_page = context.current_page.login(user)
 
 
@@ -40,4 +40,14 @@ def step_impl(context):
 
 @then('the message "{message}" is shown')
 def step_impl(context, message):
-    assert message in context.current_page.message.get_message()
+    assert_equal(message, context.current_page.message.get_fail_login_message())
+
+
+@then('the successful message "{message}" is shown')
+def step_impl(context, message):
+    assert_equal(message, context.current_page.message.get_success_login_message())
+
+
+@then('the logout message "{message}" is shown')
+def step_impl(context, message):
+    assert_equal(message, context.current_page.message.get_logout_message())

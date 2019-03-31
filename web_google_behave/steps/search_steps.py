@@ -79,6 +79,6 @@ def step_impl(context):
         assert_in(result, context.current_page.get_search_not_found())
 
 
-@then("the user click by the first found link")
+@then("the user click by the random found link")
 def step_impl(context):
     context.current_page = context.current_page.open_link()

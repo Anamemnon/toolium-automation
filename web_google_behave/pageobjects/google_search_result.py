@@ -26,7 +26,8 @@ from toolium.pageelements import *
 class GoogleSearchResultsPageObject(PageObject):
     def init_page_elements(self):
         self.search_box = InputText(By.NAME, 'q')
-        self.search_button = Button(By.XPATH, '//input[@name="q"]/parent::div/parent::div/parent::div/button')
+        self.search_button = Button(By.XPATH,
+                                    '//input[@name="q"]/parent::div/parent::div/parent::div/button')
         self.search_results_texts = Links(By.CSS_SELECTOR, 'div.srg > div.g span.st')
         self.search_results_links = Links(By.CSS_SELECTOR, 'div.srg > div.g div.r > a')
         self.search_not_found = Links(By.CSS_SELECTOR, 'p[role="heading"]')
@@ -37,7 +38,8 @@ class GoogleSearchResultsPageObject(PageObject):
         :returns: this page object instance
         """
         import urllib.parse
-        self.driver.get('{}/search?q={}'.format(self.config.get('Test', 'url'), urllib.parse.quote(query)))
+        self.driver.get(
+            '{}/search?q={}'.format(self.config.get('Test', 'url'), urllib.parse.quote(query)))
         return self
 
     def wait_until_loaded(self):
@@ -69,18 +71,21 @@ class GoogleSearchResultsPageObject(PageObject):
 
         :returns: texts that search results contains
         """
-        return [search_result.web_element.text for search_result in self.search_results_texts.page_elements]
+        return [search_result.web_element.text for search_result in
+                self.search_results_texts.page_elements]
 
     def get_all_search_results_links(self):
         """ Gets all search results links from search results page
 
         :returns: texts that search results contains
         """
-        return [search_result.web_element for search_result in self.search_results_links.page_elements]
+        return [search_result.web_element for search_result in
+                self.search_results_links.page_elements]
 
     def get_search_not_found(self):
         return self.search_not_found.page_elements.pop(0).web_element.text
 
     def open_link(self):
-        self.get_all_search_results_links()[0].click()
+        import random
+        random.choice(self.get_all_search_results_links()).click()
         return GoogleSearchResultsPageObject(self.driver_wrapper)

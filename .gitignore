@@ -130,4 +130,7 @@ web_behave/__pycache__/
 web_behave/output/
 web_behave/pageobjects/__pycache__/
 web_google_behave/output/screenshots/
-"web_google_behave/\321\202\320\265\321\201\321\202\321\213.txt"
+"web_google_behave/tests.txt"
+web_behave_practice/__pycache__/
+web_behave_practice/output/
+web_behave_practice/pageobjects/__pycache__/

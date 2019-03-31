@@ -37,7 +37,7 @@ Feature: Google search
   Scenario: Search with google for "Python" and open the first found link
     Given the home page is open
     When the user searches for "Python"
-    Then the user click by the first found link
+    Then the user click by the random found link
 
 
 

@@ -20,20 +20,23 @@ from selenium.webdriver.common.by import By
 
 from toolium.pageobjects.page_object import PageObject
 from toolium.pageelements import *
-from web_behave.pageobjects.message import MessagePageObject
 
 
-class SecureAreaPageObject(PageObject):
+class MessagePageObject(PageObject):
     def init_page_elements(self):
-        self.message = MessagePageObject()
-        self.logout_button = Button(By.XPATH, "//div[@id='content']//a[contains(@class,'button')]")
+        self.message = Text(By.CSS_SELECTOR, 'div.alert li')
+        self.successful_message = Text(By.CSS_SELECTOR, '.page-heading')
+        self.logout_message = Text(By.CSS_SELECTOR, '#login_form .page-subheading')
 
-    def logout(self):
-        """ Log out of secure area
+    def get_fail_login_message(self):
+        """ Get first line of actual message
 
-        :returns: login page object instance
+        :returns: str with message
         """
-        from web_behave.pageobjects.login_page import LoginPageObject
+        return self.message.wait_until_visible(2).text
 
-        self.logout_button.click()
-        return LoginPageObject(self.driver_wrapper).wait_until_loaded()
+    def get_success_login_message(self):
+        return self.successful_message.wait_until_visible(2).text
+
+    def get_logout_message(self):
+        return self.logout_message.wait_until_visible(2).text
