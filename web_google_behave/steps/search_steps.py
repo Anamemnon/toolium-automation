@@ -27,16 +27,6 @@ def step_impl(context):
     context.current_page.open()
 
 
-# @when('the user logs out')
-# def step_impl(context):
-#     context.current_page = context.current_page.logout()
-
-
-# @then('the message "{message}" is shown')
-# def step_impl(context, message):
-#     assert message in context.current_page.message.get_message()
-
-
 @then('the title is: {expected_title}')
 def step_impl(context, expected_title):
     actual_title = context.current_page.driver.title

@@ -16,10 +16,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from toolium.behave.environment import (before_all as toolium_before_all, before_feature as toolium_before_feature,
+from toolium.behave.environment import (before_all as toolium_before_all,
+                                        before_feature as toolium_before_feature,
                                         before_scenario as toolium_before_scenario,
                                         after_scenario as toolium_after_scenario,
-                                        after_feature as toolium_after_feature, after_all as toolium_after_all)
+                                        after_feature as toolium_after_feature,
+                                        after_all as toolium_after_all)
 
 
 def before_all(context):
