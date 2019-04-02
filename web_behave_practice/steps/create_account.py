@@ -16,9 +16,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from behave import given, when, then
+from behave import given, when, then, step
 from nose.tools import assert_equal
-from web_behave_practice.pageobjects.create_account_page import CreateAccountPageObject
 
 
 @when('the user create a email: "{email}"')
@@ -33,6 +32,18 @@ def step_impl(context):
     context.current_page.open()
     context.current_page.wait_until_loaded()
 
-@given("the create account page is open")
-def step_impl(context):
-    context.execute_steps('then the create account page is open')
+
+@given("the user select gender {gender}.")
+def step_impl(context, gender):
+    context.current_page.select_gender(gender)
+
+
+@step('enters the first name "{first_name}" and the last name "{last_name}"')
+def step_impl(context, first_name, last_name):
+    context.current_page.enter_names(first_name, last_name)
+
+
+@step("enter the day of birth: {day}.{month}.{year}")
+def step_impl(context, day, month, year):
+    date = day.lstrip('0'), month.lstrip('0'), year.lstrip('0')
+    context.current_page.enter_date_of_birth(date)

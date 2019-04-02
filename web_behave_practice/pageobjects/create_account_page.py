@@ -20,12 +20,20 @@ from selenium.webdriver.common.by import By
 
 from toolium.pageobjects.page_object import PageObject
 from toolium.pageelements import *
-from web_behave_practice.pageobjects.message import MessagePageObject
+import selenium.webdriver.support.ui as ui
 
 
 class CreateAccountPageObject(PageObject):
     def init_page_elements(self):
+        self.gender = InputRadios(By.NAME, 'id_gender')
         self.customer_firstname = InputText(By.ID, 'customer_firstname')
+        self.customer_lastname = InputText(By.ID, 'customer_lastname')
+        self.date_of_birth = (ui.Select(self.driver.find_element_by_id('days')),
+                              ui.Select(self.driver.find_element_by_id('months')),
+                              ui.Select(self.driver.find_element_by_id('years')),
+                              )
+
+        # Selects(By.CSS_SELECTOR, '#uniform-days, #uniform-months, #uniform-years')
 
     def open(self):
         """ Open login url in browser
@@ -44,6 +52,21 @@ class CreateAccountPageObject(PageObject):
         self.customer_firstname.wait_until_visible()
         return self
 
+    def select_gender(self, gender):
+        self.gender.page_elements[0 if gender == 'Mr' else 1].web_element.click()
+
+    def enter_names(self, first_name, last_name):
+        self.customer_firstname.text = first_name
+        self.customer_lastname.text = last_name
+
+    def enter_date_of_birth(self, date):
+        """
+
+        :param date: tuple(day, month, year)
+        :return: None
+        """
+        for index, select in enumerate(self.date_of_birth):
+            select.select_by_value(date[index])
 
     # def create_email(self, user):
     #     self.logger.debug("Create email '%s'", user['email'])
