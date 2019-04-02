@@ -51,8 +51,17 @@ class Search_by_catalog(PageObject):
 
 # Не работает
     def checkboxes(self, which_checkboxes, elements):
-        """ Select checkboxes
-            and return
+        """
+        В идеале, должен получать группу checkbox-ов -> which_checkboxes и
+         переводить в состояние checked только те checkbox-ы, которые удовлетворяют
+         списку elements. Например, в elements могут быть названия категорий: ['Tops'],
+         ['Tops', 'Dresses']
+        В текущей реализации он игнорирует elements и, соответственно, переводит все checkbox-ы
+         в состояние checked (это, вроде, тоже не работает).
+
+        :param which_checkboxes:
+        :param elements:
+        :return:
         """
 
         for checkboxe in self.__dict__[which_checkboxes]:

@@ -6,6 +6,10 @@ Feature: Key presses feature
     When the key: <key> were pressed
     Then message with text: "<message>" should appear
     Examples:
-      | key    | message            |
-      | RETURN | You entered: ENTER |
-      | SHIFT  | You entered: SHIFT |
+      | key       | message                 |
+      | RETURN    | You entered: ENTER      |
+      | SHIFT     | You entered: SHIFT      |
+      | SPACE     | You entered: SPACE      |
+      | BACKSPACE | You entered: BACK_SPACE |
+      | NUMPAD4   | You entered: NUMPAD4    |
+      | F7        | You entered: F7         |

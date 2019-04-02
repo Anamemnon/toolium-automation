@@ -22,6 +22,7 @@ from toolium.pageobjects.page_object import PageObject
 from toolium.pageelements import *
 from web_behave_practice.pageobjects.message import MessagePageObject
 from web_behave_practice.pageobjects.secure_area import SecureAreaPageObject
+from web_behave_practice.pageobjects.create_account_page import CreateAccountPageObject
 
 
 class LoginPageObject(PageObject):
@@ -29,6 +30,8 @@ class LoginPageObject(PageObject):
         self.email = InputText(By.ID, 'email')
         self.password = InputText(By.ID, 'passwd')
         self.login_button = Button(By.ID, "SubmitLogin")
+        self.email_create = InputText(By.ID, 'email_create')
+        self.email_create_button = Button(By.ID, 'SubmitCreate')
         self.message = MessagePageObject()
 
     def open(self):
@@ -36,7 +39,8 @@ class LoginPageObject(PageObject):
 
         :returns: this page object instance
         """
-        self.driver.get('{}?controller=authentication&back=my-account'.format(self.config.get('Test', 'url')))
+        self.driver.get(
+            '{}?controller=authentication&back=my-account'.format(self.config.get('Test', 'url')))
         return self
 
     def wait_until_loaded(self):
@@ -58,3 +62,9 @@ class LoginPageObject(PageObject):
         self.password.text = user['password']
         self.login_button.click()
         return SecureAreaPageObject(self.driver_wrapper)
+
+    def create_email(self, user):
+        self.logger.debug("Create email '%s'", user['email'])
+        self.email_create.text = user['email']
+        self.email_create_button.click()
+        return CreateAccountPageObject(self.driver_wrapper)
